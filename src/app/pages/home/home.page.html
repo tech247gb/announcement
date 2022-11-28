@@ -1,0 +1,14 @@
+<section class="">
+    <div class="flex bg-zinc-900 rounded-bl-lg rounded-tr-lg mb-4"  *ngFor="let announcement of list" >
+        <div class="flex-none h-14 rounded-bl-lg">
+            <announcement-user-page [data]="announcement"></announcement-user-page>
+        </div>
+        <div class="flex-1 bg-zinc-800 rounded-bl-lg rounded-tr-lg">
+            <app-announcement-page [data]="announcement"></app-announcement-page>
+        </div>
+        <div class="flex-none rounded-tr-lg">
+            <app-star-page [data]="announcement"></app-star-page>
+        </div>
+    </div>
+</section>
+
