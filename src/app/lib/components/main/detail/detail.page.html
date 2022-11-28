@@ -1,0 +1,13 @@
+<div class="flex h-full flex-col py-8 shadow-xl">
+  <div class="bg-zinc-800 rounded-tr-lg">
+    <div class="flex justify-between">
+      <announcement-user-page [data]="announcement"></announcement-user-page>
+      <app-star-page [data]="announcement"></app-star-page>
+    </div>
+  </div>
+  <div class="relative flex-1 px-4 sm:px-6 overflow-y-auto bg-black py-6 rounded-bl-lg">
+    <div fxFlex="6" class="sec1 text-justify">
+      {{announcement.announcement}}
+    </div>
+  </div>
+</div>
